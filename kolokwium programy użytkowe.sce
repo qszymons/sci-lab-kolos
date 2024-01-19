@@ -1,10 +1,12 @@
 // a) Oblicz (log5 15 + log7 13) / log45
 result_a = (log(15) / log(5) + log(13) / log(7)) / log(45);
 disp(result_a);
+
 // b) oblicz macierz
 
 matrix_b = [1 -2 3 0; 3 3 0 6; 1 -2 5 8; 6 3 -1 0] * [6 -2 0; 3 0 6; -2 6 8; 8 -1 0];
 disp(matrix_b);
+
 // c) oblicz Pc
 
 a = 22; 
@@ -25,6 +27,15 @@ title('Wykres funkcji');
 xlabel('Oś X');
 ylabel('Oś Y');
 legend('f1 = log5(x + 4) + 2', 'f2 = ((x^3 + 4x)/(x^2 + x + 5)) + 1');
+
+
+d)
+
+sum_d = 0;
+for i = -2:32
+    sum_d = sum_d + factorial(abs(i)) + i / (2^i);
+end
+disp(sum_d);
 
 
 
